@@ -5,6 +5,7 @@ import DiaryEditor from './components/DiaryEditor';
 import AccountMenu from './components/AccountMenu';
 import SocialLinks from './components/SocialLinks';
 import Settings from './components/Settings';
+import Files from './components/Files';
 import './styles/main.css';
 
 const App: React.FC = () => {
@@ -23,9 +24,9 @@ const App: React.FC = () => {
                 <Routes>
                     <Route path="/" element={<DiaryEditor />} />
                     <Route path="/settings" element={<Settings />} />
+                    <Route path="/files" element={<Files />} />
                     <Route path="/diary/:id" element={<DiaryEditor />} />
                     <Route path="/calendar" element={<DiaryEditor />} />
-                    <Route path="/files" element={<DiaryEditor />} />
                 </Routes>
             </main>
             <footer>

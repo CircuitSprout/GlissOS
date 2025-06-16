@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Sidebar: React.FC = () => {
 
@@ -8,7 +9,11 @@ const Sidebar: React.FC = () => {
             <nav>
                 <ul style={{ listStyle: 'none', padding: 0 }}>
                     <li><button className="sidebar-btn">Diary</button></li>
-                    <li><button className="sidebar-btn">Files</button></li>
+                    <li>
+                      <Link to="/files">
+                        <button className="sidebar-btn">Files</button>
+                      </Link>
+                    </li>
                     <li><button className="sidebar-btn">Calendar</button></li>
                 </ul>
             </nav>
