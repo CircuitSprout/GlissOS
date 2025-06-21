@@ -185,3 +185,74 @@ button:hover, .account-menu button:hover {
     background-clip: text; 
     color: transparent;
 }
+.calendar-container {
+    max-width: 700px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px; 
+    width: 100%;
+}
+
+.calendar-day {
+    min-width: 0;
+    background: linear-gradient(90deg, #aebfff 0%, #00b5cd 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.calendar-day:hover {
+    background: linear-gradient(90deg, #aef6ff 0%, #00b5cd 100%);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+#calendar-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.calendar-note {
+    width: 100%;
+    min-height: 60px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 15px;
+    font-family: 'Oxanium', 'Arial', sans-serif;
+    background: transparent;
+    resize: vertical;
+    box-shadow: none;
+}
+.calendar-row {
+    width: 100%;
+    min-height: 180px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0; 
+}
+
+.calendar-row textarea {
+    width: 100%;          
+    min-height: 120px;
+    font-size: 18px;
+    box-sizing: border-box; /* Prevent overflow */
+    resize: vertical;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    background: #fff;
+}
